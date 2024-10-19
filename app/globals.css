@@ -2,26 +2,139 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.header{
+  background-color: black;
+  color: wheat;
+  height: 75px;
+  margin: 5px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.header-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 25px;
+  padding: 5px;
+  padding-top: 15px;
+
+}
+
+.footer{
+  background-color: black ;
+  color: wheat;
+  margin: 5px;
+  text-align: center;
+}
+
+.blog{
+  display: flex;
+  gap: 30px;
+}
+
+
+.parentContainer{
+  width: 30%;
+  height: 80vh;
+  background-color: pink;
+  justify-content: center;
+  align-items: center;
+  padding: 55px;
+  border-radius: 15px;
+  margin: 10px;
+  border: 2px solid purple;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.childContainer{
+  width: 250px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 10px;
+
+
+}
+
+.imageContainer{
+  height: 100%;
+  width: 220px;
+  border-radius: 15px;
+  margin-top: 17px;
+}
+
+.title{
+  font-size: 20px;
+  margin: 10px;
+  margin-top: 13px;
+}
+
+.discription{
+  font-size: 14px;
+}
+
+
+.readmore{
+  width: 50%;
+  margin: 10px;
+  background-color: white;
+  border: 2px solid purple;
+  font-size: 15px;
+  color: purple;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.readmore:hover{
+  color: wheat;
+  border: 1px solid red;
+  background-color: black;
+  transition: 0.5s;
+
+}
+
+@media only screen and (max-width:320px){
+  
+  .parentContainer{
+    width: 95%;
+    height: 100%;
+    background-color: rgb(219, 192, 243);
   }
-}
+  
+  .childContainer{
+    width: 100%;
+    height: 80%;
+    background-color: antiquewhite;
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
   }
+
+  .blog{
+    display: inline;
+    
+  }
+
+  .imageContainer{
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    margin-top: 5px;
+  }
+
+  .header-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+    padding: 5px;
+    padding-top: 25px;
+
+  }
+  
+  
 }
+
+
+
